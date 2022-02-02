@@ -544,13 +544,14 @@ footer {
   margin-right: var(--cardside);
   margin-bottom: var(--cardside);
 }
-.project-card:hover,
-.project-card:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+
 .project-card > a {
   display: block;
+}
+.project-card > a:focus,
+.project-card > a:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .project-border {
   padding: 24px 20px;
@@ -591,8 +592,8 @@ footer {
 
   /* background-color: rgba(33, 150, 243, 0.9); */
 }
-.project-card:hover .project-description,
-.project-card:focus .project-description {
+.project-card a:hover .project-description,
+.project-card a:focus .project-description {
   opacity: 1;
   transform: translateY(0px);
 }
@@ -614,8 +615,8 @@ footer {
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
 }
-.project-card:hover .project-description-translate::before,
-.project-card:focus .project-description-translate::before {
+.project-card a:hover .project-description-translate::before,
+.project-card a:focus .project-description-translate::before {
   opacity: 1;
   transform: translateY(0px);
 }
